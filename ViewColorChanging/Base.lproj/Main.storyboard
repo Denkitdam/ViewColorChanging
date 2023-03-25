@@ -117,6 +117,12 @@
                             <constraint firstItem="Fn9-DH-x2F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="toz-ya-aVe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueColourValueLabel" destination="LyD-KY-kBh" id="7rY-Uq-Pm2"/>
+                        <outlet property="greenColourValueLabel" destination="Ez9-yX-Wqr" id="Hgh-Pe-Fi2"/>
+                        <outlet property="paletteView" destination="laU-n3-VYF" id="6nP-ZV-xdv"/>
+                        <outlet property="redColourValueLabel" destination="S7H-KO-GbJ" id="i41-Gl-AZc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

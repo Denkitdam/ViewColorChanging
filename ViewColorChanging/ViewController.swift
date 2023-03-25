@@ -9,9 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redColourValueLabel: UILabel!
+    @IBOutlet var greenColourValueLabel: UILabel!
+    @IBOutlet var blueColourValueLabel: UILabel!
+    @IBOutlet var paletteView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
