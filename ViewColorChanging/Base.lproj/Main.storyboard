@@ -66,6 +66,9 @@
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ez9-yX-Wqr">
                                                                 <rect key="frame" x="0.0" y="51" width="40" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="oPh-m2-Ujo"/>
+                                                                </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -91,16 +94,25 @@
                                                         <rect key="frame" x="-2" y="0.0" width="272.33333333333331" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                         <color key="thumbTintColor" systemColor="systemRedColor"/>
+                                                        <connections>
+                                                            <action selector="redSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="ubc-Eq-QMP"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rV2-am-Bh7">
                                                         <rect key="frame" x="-2" y="49" width="272.33333333333331" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                         <color key="thumbTintColor" systemColor="systemGreenColor"/>
+                                                        <connections>
+                                                            <action selector="greenSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="ryc-RP-QhD"/>
+                                                        </connections>
                                                     </slider>
                                                     <slider opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Uu0-ub-iPx">
                                                         <rect key="frame" x="-2" y="98" width="272.33333333333331" height="29"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                                         <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                                                        <connections>
+                                                            <action selector="blueSliderMoved" destination="BYZ-38-t0r" eventType="valueChanged" id="QXI-7k-17h"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -119,9 +131,12 @@
                     </view>
                     <connections>
                         <outlet property="blueColourValueLabel" destination="LyD-KY-kBh" id="7rY-Uq-Pm2"/>
+                        <outlet property="blueSlider" destination="Uu0-ub-iPx" id="1wO-qm-lPD"/>
                         <outlet property="greenColourValueLabel" destination="Ez9-yX-Wqr" id="Hgh-Pe-Fi2"/>
+                        <outlet property="greenSlider" destination="rV2-am-Bh7" id="2De-hh-Iap"/>
                         <outlet property="paletteView" destination="laU-n3-VYF" id="6nP-ZV-xdv"/>
                         <outlet property="redColourValueLabel" destination="S7H-KO-GbJ" id="i41-Gl-AZc"/>
+                        <outlet property="redSlider" destination="jDd-Yn-H0F" id="Zwt-dG-vWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
