@@ -131,9 +131,12 @@
                     </view>
                     <connections>
                         <outlet property="blueColourValueLabel" destination="LyD-KY-kBh" id="7rY-Uq-Pm2"/>
+                        <outlet property="blueSlider" destination="Uu0-ub-iPx" id="mJZ-X4-cEl"/>
                         <outlet property="greenColourValueLabel" destination="Ez9-yX-Wqr" id="Hgh-Pe-Fi2"/>
-                        <outlet property="paletteView" destination="laU-n3-VYF" id="6nP-ZV-xdv"/>
+                        <outlet property="greenSlider" destination="rV2-am-Bh7" id="d6R-fa-Ito"/>
+                        <outlet property="paletteView" destination="laU-n3-VYF" id="XER-eT-Ki9"/>
                         <outlet property="redColourValueLabel" destination="S7H-KO-GbJ" id="i41-Gl-AZc"/>
+                        <outlet property="redSlider" destination="jDd-Yn-H0F" id="hQy-Qi-ar3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
