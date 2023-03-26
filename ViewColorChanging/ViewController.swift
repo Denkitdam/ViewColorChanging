@@ -40,7 +40,6 @@ final class ViewController: UIViewController {
             
         }
     }
-    
     private func setupPaletteViewBackgroundColor() {
         paletteView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
@@ -48,5 +47,4 @@ final class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 1)
     }
-
 }
