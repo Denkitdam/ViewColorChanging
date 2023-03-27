@@ -29,14 +29,11 @@ final class ViewController: UIViewController {
         setupPaletteViewBackgroundColor()
         switch sender.tag {
         case 1:
-            let formattedRedLabelValue = String(format: "%.2f", sender.value)
-            redColourValueLabel.text = formattedRedLabelValue
+            redColourValueLabel.text = String(format: "%.2f", sender.value)
         case 2:
-            let formattedGreenlabelValue = String(format: "%.2f", sender.value)
-            greenColourValueLabel.text = formattedGreenlabelValue
+            greenColourValueLabel.text = String(format: "%.2f", sender.value)
         default:
-            let formattedBlueLabelValue = String(format: "%.2f", sender.value)
-            blueColourValueLabel.text = formattedBlueLabelValue
+            blueColourValueLabel.text = String(format: "%.2f", sender.value)
             
         }
     }
@@ -45,6 +42,7 @@ final class ViewController: UIViewController {
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
-            alpha: 1)
+            alpha: 1
+        )
     }
 }
