@@ -11,7 +11,7 @@ protocol SettingsViewControllerDelegate: AnyObject {
     func setupBackgroundColor(with: UIColor)
 }
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
