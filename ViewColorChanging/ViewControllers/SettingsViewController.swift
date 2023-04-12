@@ -44,9 +44,9 @@ final class SettingsViewController: UIViewController {
             )
         
         switch sender.tag {
-        case 1:
+        case 0:
             redColourValueLabel.text = String(format: "%.2f", sender.value)
-        case 2:
+        case 1:
             greenColourValueLabel.text = String(format: "%.2f", sender.value)
         default:
             blueColourValueLabel.text = String(format: "%.2f", sender.value)
