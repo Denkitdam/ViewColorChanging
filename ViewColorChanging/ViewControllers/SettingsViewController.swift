@@ -18,11 +18,17 @@ final class SettingsViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
+    
+    var color: UIColor!
+   unowned var delegate: SettingsViewControllerDelegate!
+    
   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupPaletteViewBackgroundColor()
+        paletteView.backgroundColor = color
+        
+        
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
@@ -36,6 +42,9 @@ final class SettingsViewController: UIViewController {
             blueColourValueLabel.text = String(format: "%.2f", sender.value)
             
         }
+    }
+    @IBAction func doneButtonTapped() {
+        
     }
     private func setupPaletteViewBackgroundColor() {
         paletteView.backgroundColor = UIColor(
