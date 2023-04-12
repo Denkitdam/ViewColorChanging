@@ -27,6 +27,7 @@ final class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         paletteView.backgroundColor = color
+        //redSlider.value = Float(color.ciColor.red)
         
         
     }
@@ -44,8 +45,10 @@ final class SettingsViewController: UIViewController {
         }
     }
     @IBAction func doneButtonTapped() {
-        
+        delegate.setupBackgroundColor(with: paletteView.backgroundColor ?? .white)
+        dismiss(animated: true)
     }
+    
     private func setupPaletteViewBackgroundColor() {
         paletteView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
