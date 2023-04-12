@@ -179,6 +179,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qca-j9-97P">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="tcS-ci-Iye">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Y3b-Yw-ajX"/>
                             </connections>
