@@ -27,13 +27,22 @@ final class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         paletteView.backgroundColor = color
-        //redSlider.value = Float(color.ciColor.red)
+        redSlider.value = Float(color.colorComponents.red)
+        greenSlider.value = Float(color.colorComponents.green)
+        blueSlider.value = Float(color.colorComponents.blue)
+        
         
         
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
-        setupPaletteViewBackgroundColor()
+        paletteView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+            )
+        
         switch sender.tag {
         case 1:
             redColourValueLabel.text = String(format: "%.2f", sender.value)
@@ -49,12 +58,17 @@ final class SettingsViewController: UIViewController {
         dismiss(animated: true)
     }
     
-    private func setupPaletteViewBackgroundColor() {
-        paletteView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value),
-            alpha: 1
-        )
+}
+
+  // MARK: - UIColor extension
+extension UIColor {
+    var colorComponents: (red:CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        
+        return (red, green, blue, alpha)
     }
 }
