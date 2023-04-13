@@ -143,3 +143,53 @@ extension SettingsViewController {
 
 }
 
+  // MARK: - UITextFieldDelegate
+
+extension SettingsViewController: UITextFieldDelegate {
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let text  = textField.text else {
+            showAlert(withTitle: "Wrong format", andMessage: "Please enter correct format")
+            return
+        }
+        guard let currentValue = Float(text), (0...1).contains(currentValue) else {
+            showAlert(withTitle: "Wrong format", andMessage: "Please enter correct format")
+            return
+        }
+        
+        switch textField{
+        case redTF:
+            redSlider.setValue(currentValue, animated: true)
+            setValue(for: redColourValueLabel)
+        case greenSlider:
+            greenSlider.setValue(currentValue, animated: true)
+            setValue(for: greenColourValueLabel)
+        default:
+            blueSlider.setValue(currentValue, animated: true)
+            setValue(for: blueColourValueLabel)
+        }
+        
+        setColor()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        let keyboardToolBar = UIToolbar()
+        keyboardToolBar.sizeToFit()
+        textField.inputAccessoryView = keyboardToolBar
+        
+        let doneItem = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: textField,
+            action: #selector(resignFirstResponder)
+        )
+            
+        let flexBarButton = UIBarButtonItem(
+                barButtonSystemItem: .flexibleSpace,
+                target: nil,
+                action: nil
+            )
+        
+        keyboardToolBar.items = [flexBarButton, doneItem]
+    }
+}
+
