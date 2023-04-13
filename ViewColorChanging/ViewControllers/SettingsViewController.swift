@@ -8,7 +8,8 @@
 import UIKit
 
 final class SettingsViewController: UIViewController {
-      // MARK: -IB Outlets
+      
+    // MARK: -IB Outlets
 
     @IBOutlet var paletteView: UIView!
     
@@ -20,10 +21,11 @@ final class SettingsViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+      // MARK: - Public properties
     var color: UIColor!
    unowned var delegate: SettingsViewControllerDelegate!
     
-  
+      // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,8 @@ final class SettingsViewController: UIViewController {
         blueSlider.value = Float(color.colorComponents.blue)
     }
 
+      // MARK: -IB Actions
+    
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         paletteView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
