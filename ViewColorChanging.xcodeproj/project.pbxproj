@@ -60,7 +60,7 @@
 			children = (
 				C8C2A6BA29E5E0CB007EA405 /* App */,
 				C8C2A6BB29E5E0DC007EA405 /* ViewControllers */,
-				C8C2A6BC29E5E0FD007EA405 /* SStoryboards] */,
+				C8C2A6BC29E5E0FD007EA405 /* Storyboards  */,
 				C84ABE9829CE01AB00EEC084 /* Assets.xcassets */,
 			);
 			path = ViewColorChanging;
@@ -85,13 +85,13 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		C8C2A6BC29E5E0FD007EA405 /* SStoryboards] */ = {
+		C8C2A6BC29E5E0FD007EA405 /* Storyboards  */ = {
 			isa = PBXGroup;
 			children = (
 				C84ABE9529CE01AA00EEC084 /* Main.storyboard */,
 				C84ABE9A29CE01AB00EEC084 /* LaunchScreen.storyboard */,
 			);
-			path = "SStoryboards]";
+			path = "Storyboards ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
