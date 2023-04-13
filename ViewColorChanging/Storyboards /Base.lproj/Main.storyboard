@@ -118,7 +118,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="LGz-Lj-hgJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37h-yY-gNt">
                                                 <rect key="frame" x="0.0" y="39" width="45" height="34"/>
@@ -126,7 +126,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="xAe-MP-uje"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVZ-nJ-gic">
                                                 <rect key="frame" x="0.0" y="78" width="45" height="34"/>
@@ -134,7 +134,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="jYO-wx-4uT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -155,7 +155,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueColourValueLabel" destination="Gve-oS-p15" id="e0j-KF-qrg"/>
+                        <outlet property="blueSlider" destination="3RK-zV-Fmp" id="Xbf-eE-2TD"/>
+                        <outlet property="greenColourValueLabel" destination="Sw0-e5-cvM" id="In7-cr-iBi"/>
+                        <outlet property="greenSlider" destination="5cv-pq-2kN" id="URI-6g-cfW"/>
                         <outlet property="paletteView" destination="Yl0-Fc-ost" id="5QH-Xl-csV"/>
+                        <outlet property="redColourValueLabel" destination="Jkm-I5-JE0" id="XIX-E1-4yw"/>
+                        <outlet property="redSlider" destination="jU2-90-vNH" id="DLO-kZ-8qa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

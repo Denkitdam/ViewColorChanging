@@ -8,6 +8,7 @@
 import UIKit
 
 final class SettingsViewController: UIViewController {
+      // MARK: -IB Outlets
 
     @IBOutlet var paletteView: UIView!
     
@@ -30,9 +31,6 @@ final class SettingsViewController: UIViewController {
         redSlider.value = Float(color.colorComponents.red)
         greenSlider.value = Float(color.colorComponents.green)
         blueSlider.value = Float(color.colorComponents.blue)
-        
-        
-        
     }
 
     @IBAction func sliderValueChanged(_ sender: UISlider) {
@@ -41,7 +39,7 @@ final class SettingsViewController: UIViewController {
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
-            )
+        )
         
         switch sender.tag {
         case 0:
