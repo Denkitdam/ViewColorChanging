@@ -100,12 +100,21 @@
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jU2-90-vNH">
                                                 <rect key="frame" x="-2" y="0.0" width="133.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="IBw-gD-e2V"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5cv-pq-2kN">
                                                 <rect key="frame" x="-2" y="48" width="133.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kxl-ap-nsp"/>
+                                                </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3RK-zV-Fmp">
                                                 <rect key="frame" x="-2" y="96" width="133.5" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7ji-FX-zCO"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -157,11 +166,14 @@
                     <connections>
                         <outlet property="blueColourValueLabel" destination="Gve-oS-p15" id="e0j-KF-qrg"/>
                         <outlet property="blueSlider" destination="3RK-zV-Fmp" id="Xbf-eE-2TD"/>
+                        <outlet property="blueTF" destination="xVZ-nJ-gic" id="jqW-rM-dwI"/>
                         <outlet property="greenColourValueLabel" destination="Sw0-e5-cvM" id="In7-cr-iBi"/>
                         <outlet property="greenSlider" destination="5cv-pq-2kN" id="URI-6g-cfW"/>
+                        <outlet property="greenTF" destination="37h-yY-gNt" id="mnV-Uy-3DC"/>
                         <outlet property="paletteView" destination="Yl0-Fc-ost" id="5QH-Xl-csV"/>
                         <outlet property="redColourValueLabel" destination="Jkm-I5-JE0" id="XIX-E1-4yw"/>
                         <outlet property="redSlider" destination="jU2-90-vNH" id="DLO-kZ-8qa"/>
+                        <outlet property="redTF" destination="Wt8-08-THm" id="3hU-5W-0oa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
